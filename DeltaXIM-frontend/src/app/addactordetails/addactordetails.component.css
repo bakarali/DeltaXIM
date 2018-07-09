@@ -1,0 +1,37 @@
+.container{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+
+}
+.textbox{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+     border: none;
+    border-bottom: 1px solid #E0E0E0;
+    color: #757575;
+}
+.textbox:focus{
+        outline: none;
+        border-bottom: 1px solid #007bff;
+}
+
+.button {
+    border: none;
+    color: white;
+    background: #007bff;
+    padding: 10px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1.5px 10px 0 rgba(0, 0, 0, 0.19);
+    width: 100%;
+    outline: none;
+    }
+
+.filebutton{
+    border: none
+}

@@ -1,0 +1,12 @@
+.btn {
+    margin:15px;
+    width:100%;
+    border: none;
+    outline:none;
+    background: #FF5722;
+    color: #ffffff;
+}
+.btn:focus{
+    border: none;
+    outline: none;
+}

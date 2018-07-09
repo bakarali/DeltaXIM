@@ -1,0 +1,23 @@
+<div class="card" *ngFor="let actor of actors;">
+<div class="row">
+        <div class="col-md-4">
+            <div class="card-poster">
+                <img [src]="actor.poster" alt="">
+            </div>  
+        </div>
+        <div class="col-md-8">
+    <div class="row">
+      <div class="col-md-8">
+          <h3>{{actor.name}}</h3>         
+      </div>
+      <div class="col-md-2">
+          <p><b>Gender</b>: {{actor.sex}}</p>         
+      </div>
+
+    </div>
+    <p><b>Date of birth</b>:  {{actor.dob}}</p>         
+    <p><b>Bio</b>:  {{actor.bio}}</p>
+</div>
+
+</div>
+</div>

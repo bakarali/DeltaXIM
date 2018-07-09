@@ -1,0 +1,16 @@
+<div class="container center">
+    <form #regForm='ngForm' (ngSubmit)="addactor(regForm)" >  
+            <input #name class="textbox" type="text" placeholder="ex :Chris Evans" ngModel name="name"><br>
+            <select class="textbox" style="background:white" ngModel name="sex">
+                <option>Male</option>
+                <option>Female</option>
+            </select><br>
+            <input #plot class="textbox" type="date" placeholder="" ngModel name="dob"><br>
+            <input #actor class="textbox" type="text" placeholder="bio:" ngModel name="bio"><br>
+            <input #file class="textbox" type="file" placeholder="Poster" ngModel name="file" (change)="handleFileInput($event.target.files)"><br>
+            <div class="container">
+            <input id="button" class="button filebutton" type="submit" value="Add Actor" disabled>
+            </div>
+        </form>
+</div>
+

@@ -1,0 +1,13 @@
+<div class="container center">
+    <form #regForm='ngForm' (ngSubmit)="addmovies(regForm)" >  
+            <input #name class="textbox" type="text" placeholder="ex :Avengers Infinity War" ngModel name="name"><br>
+            <input #yor class="textbox" type="text" placeholder="Year of release" ngModel name="year_of_release"><br>
+            <input #plot class="textbox" type="text" placeholder="Plot:ex S.H.I.E.L.D. leader..." ngModel name="plot"><br>
+            <input #actor class="textbox" type="text" placeholder="ex :Chris Evans, Robert Downey Jr." ngModel name="actor"><br>
+            <input #producer class="textbox" type="text" placeholder="ex :Kevin" ngModel name="producer"><br>
+            <input #file class="button" type="file" placeholder="Poster" ngModel name="file" (change)="handleFileInput($event.target.files)"><br>
+            <div class="container">
+            <input id="button" class="button" type="submit" value="Add Movie" disabled>
+            </div>
+        </form>
+</div>

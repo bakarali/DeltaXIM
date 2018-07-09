@@ -1,0 +1,24 @@
+<div class="card" *ngFor="let producer of producers;">
+    <div class="row">
+            <div class="col-md-4">
+                <div class="card-poster">
+                    <img [src]="producer.poster" alt="">
+                </div>  
+            </div>
+            <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-8">
+              <h3>{{producer.name}}</h3>         
+          </div>
+          <div class="col-md-2">
+              <p><b>Gender</b>: {{producer.sex}}</p>         
+          </div>
+    
+        </div>
+        <p><b>Date of birth</b>:  {{producer.dob}}</p>         
+        <p><b>Bio</b>:  {{producer.bio}}</p>
+    </div>
+    
+    </div>
+    </div>
+    
